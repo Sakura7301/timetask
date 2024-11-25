@@ -847,7 +847,7 @@ class TimeTaskModel:
     #通过 群Title 获取群ID
     def get_gropID_withGroupTitle(self, groupTitle, channel_name):
         if len(groupTitle) <= 0:
-              return ""
+            return ""
         #itchat
         if channel_name == "wx":
             tempRoomId = ""
