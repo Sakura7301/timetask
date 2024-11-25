@@ -12,18 +12,6 @@
   "extension_function":
   [
     {
-      "key_word": "早报",
-      "func_command_prefix":"$tool "
-    },
-    {
-      "key_word": "点歌",
-      "func_command_prefix": "$"
-    },
-    {
-      "key_word": "搜索",
-      "func_command_prefix": "$tool google "
-    },
-    {
       "key_word": "GPT",
       "func_command_prefix": "GPT"
     }
