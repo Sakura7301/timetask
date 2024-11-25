@@ -837,7 +837,7 @@ class TimeTaskModel:
         elif "Group[" in targetStr:
             index = targetStr.index("Group[")
         if index < 0:
-              return "", targetStr
+            return "", targetStr
 
         substring_event = targetStr[:index].strip()
         substring_groupTitle = targetStr[index + 6:]
