@@ -327,7 +327,7 @@ class ExcelTool(object):
         #好友
         friends = []
         #群聊
-        chat_rooms = []
+        chatrooms = []
 
         #好友处理
         if len(idsDic) > 0:
@@ -357,13 +357,13 @@ class ExcelTool(object):
             #群聊处理
             try:
                 #群聊 （id组装 旧 ：新）
-                chat_rooms = itchat.get_chat_rooms()
+                chatrooms = itchat.get_chatrooms()
             except ZeroDivisionError:
                 # 捕获并处理 ZeroDivisionError 异常
                 logger.info("群聊列表, 错误发生")
 
             #获取群聊 - 旧 ： 新
-            for chat_room in chat_rooms:
+            for chat_room in chatrooms:
                 #id
                 userName = chat_room["UserName"]
                 NickName = chat_room["NickName"]
@@ -854,9 +854,9 @@ class TimeTaskModel:
             #群聊处理
             try:
                 #群聊
-                chat_rooms = itchat.get_chat_rooms()
+                chatrooms = itchat.get_chatrooms()
                 #获取群聊
-                for chat_room in chat_rooms:
+                for chat_room in chatrooms:
                     #id
                     userName = chat_room["UserName"]
                     NickName = chat_room["NickName"]
